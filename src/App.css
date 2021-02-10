@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav {
+  margin: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav h1 {
+  font-size: 60px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav h2 {
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.nav a {
+  color: rgb(30, 87, 209);
+  text-decoration: none;
+  margin: 10px;
+  font-size: 30px;
+}
+
+.nav a:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.picUl {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.picList {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-basis: 28%;
+  list-style-type: none;
+  margin: 15px;
+  font-size: 18px;
+  opacity: 0.8;
 }
 
-.App-link {
-  color: #61dafb;
+.picList:hover {
+  box-shadow: 2px 5px 5px rgba(128, 128, 128, 0.473);
+  flex-basis: 28.5%;
+  opacity: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.picList img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.secSpan {
+  padding: 5px 20px;
+  font-size: 15px;
 }
